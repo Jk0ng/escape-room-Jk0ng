@@ -1,0 +1,7 @@
+.Colors {
+    grid-area: Colors;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    background: #bb836a;
+    border-left: 1px solid rbga(225,225,225,.4);   
+}
