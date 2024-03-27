@@ -3,7 +3,7 @@ import './App.css'
 import Secret from './components/Secret/Secret'
 import Rows from './components/Rows/Rows'
 import Buttons from './components/Buttons/Buttons'
-import  Colors from './components/Colors/Colors'
+import Colors from './components/Colors/Colors'
 import GameEnds from './components/GameEnds/GameEnds'
 
 
