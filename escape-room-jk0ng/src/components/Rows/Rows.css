@@ -14,7 +14,7 @@
     height: 60px;
     justify-items: center;
     align-items: center;
-    gap: 2%;
+    gap:2%;
     cursor: not-allowed;
     pointer-events: none;
 }
