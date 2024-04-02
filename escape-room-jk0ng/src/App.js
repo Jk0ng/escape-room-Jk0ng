@@ -24,7 +24,6 @@ const App = () => {
                     {/* <GameEnds/> */}
                 </div>
             </div>
-            {console.log({initGameState})}
         </AppContext.Provider> 
     );
 }
