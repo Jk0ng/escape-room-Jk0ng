@@ -7,9 +7,11 @@ import Buttons from './components/Buttons/Buttons'
 import Colors from './components/Colors/Colors'
 import GameEnds from './components/GameEnds/GameEnds'
 import AppContext from './context/Contexts'
+import { initGameState } from './helper'
+
 
 const App = () => {
-    const [appState, dispatch] = useReducer(reducer, { test: true })
+    const [appState, dispatch] = useReducer(reducer, initGameState())
 
     return (
         <AppContext.Provider value={[appState, dispatch]}>
@@ -22,7 +24,7 @@ const App = () => {
                     {/* <GameEnds/> */}
                 </div>
             </div>
-        </AppContext.Provider>
+        </AppContext.Provider> 
     );
 }
 export default App
