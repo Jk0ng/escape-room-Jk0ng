@@ -2,8 +2,9 @@ import { color_options } from '../../constant'
 import { useAppContext } from '../../context/Contexts'
 import Circle from '../Circle/Circle'
 import './Colors.css'
+import { setColor } from '../../reducer/actions'
 const Colors = () => {
-    const [appState] = useAppContext()
+    const [appState, dispatch] = useAppContext()
     return (
         <div className='Colors'>
             {color_options.map(color =>
@@ -11,6 +12,7 @@ const Colors = () => {
                     <Circle
                         className={appState.currentColor === color ? 'active' : ''}
                         color={color}
+                        onClick={() => dispatch(setColor(color))}
                     />
                 </div>)
             }
